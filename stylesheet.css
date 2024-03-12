@@ -47,7 +47,7 @@ header {
 
 h1 {
   font-size: 4.2rem;
-  color: var(--grass-yellow)
+  color: var(--grass-yellow);
 }
 
 #form-box {
@@ -60,7 +60,6 @@ h1 {
   flex-direction: column;
   width: 60%;
   height: 100%;
-  /* padding-top: 50px; */
   position: absolute;
   right: 0;
 }
@@ -95,7 +94,6 @@ h1 {
 .item {
   display: flex;
   flex-direction: column;
-  /* margin-top: 10px; */
   width: 50%;
   
 }
@@ -120,14 +118,22 @@ input:focus{
 }
 
 input[type="tel"]:focus:invalid,
-input[type="email"]:focus:invalid {
+input[type="email"]:focus:invalid,
+input[id="password"]:focus:invalid {
     box-shadow: 0 0 5px 1px red;
   }
 
   input[type="tel"]:focus:valid,
-  input[type="email"]:focus:valid {
+  input[type="email"]:focus:valid,
+  input[id="password"]:focus:valid {
     box-shadow: 0 0 15px 1px rgb(2, 204, 2);
   }
+
+#pwparam{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(61, 60, 60);
+}
 
 #message{
     font-size: 1.5rem;

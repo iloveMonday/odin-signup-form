@@ -15,4 +15,4 @@ function check(){
             message.innerHTML = '☒ not a match, try again!'; 
             submit.disabled = true;
           }
-  }
+  };
