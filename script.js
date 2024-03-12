@@ -1,8 +1,3 @@
-let username = document.getElementById("firstname");
-let password = document.getElementById("password");
-let conpassword = document.getElementById("conpassword");
-
-
 function check(){
     let message = document.getElementById('message');
     let submit = document.getElementById("submit");
