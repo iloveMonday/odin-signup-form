@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <script src="./script.js"></script>
+    <title>Sign-Up Formb</title>
+</head>
+<body>
+    <header>
+        <img id="calvin" src="./media/calvin.png" alt="calvin says hello">
+        <div id="title">TONII LLC.</div>
+    </header>
+    <form>
+        <div id="form-box">
+                <div id="form-heading">
+                    <h1>is this what you wanted?</h1>
+                    <h3>surely it isn't but let's help you get as much as you can from this experience.</h3>
+                </div>
+                
+                <div id="form-info">
+                        <div class="item">
+                            <label for="firstname">first name</label>
+                            <input type="text" id="firstname" required 
+                            placeholder="first name"/>
+                        </div>
+                        <div class="item">
+                            <label for="lastname">last name</label>
+                            <input type="text" id="lastname" 
+                            placeholder="last name" required/>
+                        </div>
+
+                        <div class="item">
+                            <label for="phone">phone</label>
+                            <input type="tel" inputmode="numeric" id="phone"
+                            placeholder="508-766-1234" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                        </div>
+                        <div class="item">
+                            <label for="email">email</label>
+                            <input type="email" id="email"
+                            placeholder="banana@yoohoo.com" required />
+                        </div>
+
+                        <div class="item">
+                            <label for="password">password</label>
+                            <input type="password" id="password" name="password" required 
+                            autocomplete="new-password" />
+                        </div>                
+                        <div class="item">
+                            <label for="conpassword">confirm password <span id="icon"></span><span id='message'></span></label>
+                            <input type="password" id="conpassword" name="conpassword" onkeyup="check()" required 
+                            autocomplete="new-password" />
+                        </div>
+                </div>
+                <div id="form-submit">
+                     <button id="submit">Create Account</button>
+                     <div id="already">Already have an account? <a href="http://openclassactions.com">Log In</a></div>
+                </div>
+            </form>
+        </div>
+    <footer class="footer">photo by Gabriel Santos</footer>
+
+</body>
+</html>

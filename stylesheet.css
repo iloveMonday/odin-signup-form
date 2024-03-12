@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Grotesk;
+  src: url(./fonts/static/SpaceGrotesk-Bold.ttf);
+}
+
+:root {
+    --grass-yellow: rgb(197, 149, 27);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("./media/gabriel-santos-GBVDilE8yvI-unsplash.jpg");
+  background-size: contain;
+  height: 100vh;
+  width:100%;
+  display: flex; 
+  flex-shrink: 0;
+}
+
+header {
+  background-color: rgba(245, 245, 220, 0.4);
+  position: absolute;
+  top: 50px;
+  height: 150px;
+  width: 40%;
+  font-family: Grotesk, Roboto, Helvetica, Arial;
+  font-size: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#calvin {
+  height: 120px;
+  width: auto;
+}
+
+h1 {
+  font-size: 4.2rem;
+  color: var(--grass-yellow)
+}
+
+#form-box {
+  background-color: cornflowerblue;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  /* padding-top: 50px; */
+  position: absolute;
+  right: 0;
+}
+
+#form-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25%;
+  margin: 20px;
+}
+
+#form-info {
+  background-color: rgb(86, 126, 201);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 30%;
+  box-shadow: 10px 5px 5px var(--grass-yellow);
+  flex-wrap: wrap;
+}
+
+
+#form-submit {
+  margin: 30px 0 0 25px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+  width: 50%;
+  
+}
+
+
+input {
+  background-color: cornflowerblue;
+  border-radius: 3px;
+  width: 90%;
+  height: 3rem;
+  padding: 2px;
+  font-size: 1.8rem;
+}
+
+ input::placeholder{
+    color: var(--grass-yellow);
+}
+
+input:focus{
+    background-color: goldenrod;
+    box-shadow: 0 0 5px 1px yellow;
+}
+
+input[type="tel"]:focus:invalid,
+input[type="email"]:focus:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+
+  input[type="tel"]:focus:valid,
+  input[type="email"]:focus:valid {
+    box-shadow: 0 0 15px 1px rgb(2, 204, 2);
+  }
+
+#message{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+button {
+  background: var(--grass-yellow);
+  border-radius: 10px;
+  font-size: 1.6rem;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+button:active {
+    background: #de60da;
+    color: #ffffff;
+    padding: 5px;
+    border: solid #1f628d 2px;
+    text-decoration: none;
+  }
+
+#already{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer {
+  height: 10px;
+  width: 100%;
+  z-index: auto;
+  background-color: rgba(245, 245, 220, 0.4);
+  position: absolute;
+  bottom: 0;
+}
